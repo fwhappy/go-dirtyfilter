@@ -5,7 +5,7 @@ import (
 	"io"
 	"sync/atomic"
 
-	"github.com/antlinker/go-cmap"
+	cmap "github.com/fwhappy/go-cmap"
 )
 
 const (
