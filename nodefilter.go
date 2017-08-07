@@ -143,7 +143,7 @@ func (nf *nodeFilter) Replace(text string, delim rune) (string, error) {
 	uchars := []rune(text)
 	idexs := nf.doIndexes(uchars)
 	if len(idexs) == 0 {
-		return "", nil
+		return text, nil
 	}
 	for i := 0; i < len(idexs); i++ {
 		uchars[idexs[i]] = rune(delim)
